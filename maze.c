@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<windows.h>
 
 int m[9][9]={
 	{2,2,2,2,2,2,2,2,2},
@@ -26,7 +27,6 @@ int main(){
 		printf("find all path\n");
 	return 0;
 }
-
 int visit(int i,int j){
 	static int path=1;
 	m[i][j]=1;
