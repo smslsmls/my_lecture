@@ -786,10 +786,21 @@ int p52() {
 	return 0;
 }
 
+int p53(){
+	char name[20];
+	int age;
+	FILE* fp;
+	fp=fopen("class1.txt","w");
+	for(int i=0;i<3;i++){
+		scanf("%s %d",name,&age);
+		fprintf(fp,"%s %d\n",name,age);
+	}
+}
+
 
 
 int main() {
-	p52();
+	p53();
 
 	return 0;
 }
