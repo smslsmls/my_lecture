@@ -9,4 +9,5 @@ int main(){
 		scanf("%s %d",name,&age);
 		fprintf(fp,"%s %d\n",name,age);
 	}
+	fclose(fp);
 }
