@@ -12,6 +12,7 @@ int main(){
 
 void func1(){
 	i++;
+	i++;
 	printf("func1 i=%d\n",i);
 	func2();
 }
