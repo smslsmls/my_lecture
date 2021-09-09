@@ -1,13 +1,9 @@
-# CC=gcc
-# CFLAGS=-g -Wall
-# OBJS=main.o
-# TARGET=app.out
+$ls
+linked_list_sort.c linked_list_sort_main.c linked_list.h
  
-# all: $(TARGET)
+$gcc -c -o main.o main.cpp
+$gcc -c -o sum.o sum.cpp
  
-# clean:
-	# @rm -rf *.o
-	# @rm -rf $(TARGET)
- 
-# $(TARGET): $(OBJS)
-	# $(CC) -o $@ $(OBJS)
+$gcc -o main main.o sum.o
+$ls
+main main.o sum.o main.cpp sum.cpp sum.h
